@@ -13,13 +13,17 @@ export class ListaPessoaComponent implements OnInit {
   nome: string = "Eduardo";
 
   constructor(private service: PessoaServiceService) { 
-    this.pessoas = service.getPessoas();
+    this.listarPessoas();
   }
 
   ngOnInit() {
   }
 
-  listar() {
+  listarPessoas() {
+    this.pessoas = this.service.getPessoas();
+  }
+  enviarNome() {
+    this.service.addPessoa(this.nome);
   }
 
 }
