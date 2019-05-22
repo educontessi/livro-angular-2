@@ -2,12 +2,15 @@
 
 <!--The content below is only a placeholder and can be replaced.-->
 <div>
-  <!-- data	 binding -->
-  <h2> {{ title }} </h2>                                <!--Interpolation-->
-  <img [src]="foto">                                    <!-- Property	binding -->
-  <br>
-  <button (click)="enviarMsg()">Enviar Alerta</button>  <!--Event binding-->
-                                                        <!--Two-way data binding feito no input no componente lista-pessoa-component.html-->
+    <!-- data	 binding -->
+    <h2> {{ title }} </h2>
+    <!--Interpolation-->
+    <img [src]="foto">
+    <!-- Property	binding -->
+    <br>
+    <button (click)="enviarMsg()">Enviar Alerta</button>
+    <!--Event binding-->
+    <!--Two-way data binding feito no input no componente lista-pessoa-component.html-->
 </div>
 
 <app-lista-pessoa></app-lista-pessoa>
@@ -22,3 +25,4 @@
 <app-ng-switch-case></app-ng-switch-case>
 <app-ng-for></app-ng-for>
 <app-ng-class></app-ng-class>
+<app-ng-style></app-ng-style>
