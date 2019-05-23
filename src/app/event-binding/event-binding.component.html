@@ -2,3 +2,7 @@
 
 <button (click)="meuClick()">Click aqui</button>
 <input (keyup)="digitou($event)">
+
+
+<h2>5.2 Variavel de referência do template</h2>
+<input #valorInput (keyup)="digitouVarTemplate(valorInput.value)">
