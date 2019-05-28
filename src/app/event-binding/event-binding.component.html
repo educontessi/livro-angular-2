@@ -11,3 +11,8 @@
 <h2>5.3 CLICK</h2>
 <input type="text" [(ngModel)]="nome">
 <button (click)="mostraNome()">Enviar Nome</button>
+
+
+<h2>5.4 KEYUP</h2>
+<input type="password" #qtdSenha (keyup)="validaSenha(qtdSenha.value)">
+<button [disabled]="! habilitarBotao" (click)="gravarSenha(qtdSenha.value)">gravar	senha</button>

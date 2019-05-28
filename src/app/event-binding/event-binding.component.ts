@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventBindingComponent implements OnInit {
   nome: string = "Eduardo";
+  habilitarBotao: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
@@ -27,5 +29,19 @@ export class EventBindingComponent implements OnInit {
   mostraNome(): void {
     console.log(this.nome);
   }
+
+  validaSenha(valor: string): void {
+    if (valor.length >= 5) {
+      this.habilitarBotao = true;
+    }
+    else {
+      this.habilitarBotao = false;
+    }
+  }
+
+  gravarSenha(senha): void {
+    alert('senha gravada com sucesso sua senha é: ' + senha);
+  }
+
 
 }
