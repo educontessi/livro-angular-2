@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./event-binding.component.css']
 })
 export class EventBindingComponent implements OnInit {
-
+  nome: string = "Eduardo";
   constructor() { }
 
   ngOnInit() {
@@ -22,6 +22,10 @@ export class EventBindingComponent implements OnInit {
 
   digitouVarTemplate(valor): void {
     console.log(valor);
+  }
+
+  mostraNome(): void {
+    console.log(this.nome);
   }
 
 }

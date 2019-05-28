@@ -6,3 +6,8 @@
 
 <h2>5.2 Variavel de referência do template</h2>
 <input #valorInput (keyup)="digitouVarTemplate(valorInput.value)">
+
+
+<h2>5.3 CLICK</h2>
+<input type="text" [(ngModel)]="nome">
+<button (click)="mostraNome()">Enviar Nome</button>
