@@ -16,3 +16,10 @@
 <h2>5.4 KEYUP</h2>
 <input type="password" #qtdSenha (keyup)="validaSenha(qtdSenha.value)">
 <button [disabled]="! habilitarBotao" (click)="gravarSenha(qtdSenha.value)">gravar	senha</button>
+
+
+<h2>5.5 KEYUP.ENTER</h2>
+<input type="text" #conteudo (keyup.enter)="adicionar(conteudo.value); conteudo.value=''">
+<ul>
+    <li *ngFor="let	item of valores">{{item}}</li>
+</ul>
