@@ -41,3 +41,10 @@
 
 <h1>Capítulo 5 - Entrada de dados do usuário</h1>
 <app-event-binding></app-event-binding>
+
+<h2>5.7 @Input</h2>
+<app-input-output [menu]="desenvolvimento"></app-input-output>
+
+<h2>5.8 @Output</h2>
+<app-input-output [menu]="desenvolvimento" (nomeClidado)="valorPassado($event)"></app-input-output>
+<p>você clicou em: {{valor}}</p>
