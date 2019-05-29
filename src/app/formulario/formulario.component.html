@@ -1,0 +1,20 @@
+<h2>6.1 NGMODEL, VARIÁVEL DE TEMPLATE E ATRIBUTO NAME DA TAG HTML</h2>
+
+<form #cadastro="ngForm">
+    <div>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" [(ngModel)]="contato.nome" name="nome">
+    </div>
+    <br>
+    <div>
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" [(ngModel)]="contato.telefone" name="telefone">
+    </div>
+    <br>
+    <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" [(ngModel)]="contato.email" name="email">
+    </div>
+    <br>
+    <button type="submit">Enviar</button>
+</form>
