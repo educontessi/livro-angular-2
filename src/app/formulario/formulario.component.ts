@@ -10,9 +10,16 @@ export class FormularioComponent implements OnInit {
 
   contato = new Contato('Eduardo', '(99)99999-9999', 'email@email.com');
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
-    }
+  }
+
+  enviarDados() {
+    alert(`seu nome é: ${this.contato.nome}`);
+    alert(`seu telefone é: ${this.contato.telefone}`);
+    alert(`seu email é: ${this.contato.email}`);
+  }
+
 
 }
