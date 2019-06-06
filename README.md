@@ -1,4 +1,4 @@
-# LivroAngular2
+# Livro Angular 2 - Casa do Código: Crie aplicações com Angular: O novo framework do Google
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
