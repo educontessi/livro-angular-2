@@ -6,14 +6,10 @@ import { MeuLogService } from './meu-log.service';
 })
 export class NomesTecService {
 
-  meuLog:	MeuLogService;
-
-  constructor(meulog:	MeuLogService) { 
-    this.meuLog	=	meulog;
-  }
+  constructor(private	meulog:	MeuLogService) { }
 
   getNomesTec(): string[] {
-    this.meuLog.setLog('consultou	o	array	de	tecnologias');
+    this.meulog.setLog('consultou	o	array	de	tecnologias');
     return ['Angular	2', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Desenvolvendo	com	Angular	2'];
   }
 
