@@ -11,3 +11,9 @@
 <ul>
     <li *ngFor="let	item of tecnologias">{{item}}</li>
 </ul>
+
+<h2>7.4 DEPENDÊNCIAS OPCIONAIS</h2>
+<p>Para deixarmos nossa classe de serviço nomestec.component.ts independente da necessidade da classe deserviço de log,
+    vamos adicionar na frente uma injeção da classe de log, o decorador @Opitional()</p>
+<p>Dessa forma, estamos verificando se existe a instância da classe de log. Se existir, nós vamos criar o log no
+    navegador; caso não exista, a aplicação funcionará corretamente, sem problemas.</p>
